@@ -54,7 +54,7 @@ void delayms(uint t)
 {
     uint i;
     while(t--)
-      for(i=1330;i>0;i--);//进过参数的调整 
+      for(i=1330;i>0;i--);//经过参数的调整 
 }
 
 void ds18b20_init(void){
@@ -70,7 +70,7 @@ void ds18b20_init(void){
 
 void ds18b20_write_byte(uint8_t byte) {
     uint8_t bit;
-    // 逐位写入字节
+    // 逐位写入一个字节
     for (bit = 0; bit < 8; bit++) {
         // pull low
         P2DIR |= DS18B20_PIN;
